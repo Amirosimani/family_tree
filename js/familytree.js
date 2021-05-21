@@ -65,24 +65,24 @@ chart.on('render-link', function(sender, args) {
 
 chart.load([{
         id: 1,
-        name: "Denny Curtis",
-        dob: "01-01-2000",
+        name: "زهرا حق‌نگهدار",
+        dob: "۲۹/۲/۱۳۳۹",
         img: "https://cdn.balkan.app/shared/2.jpg"
     },
     {
         id: 2,
         pid: 1,
         tags: ['partner'],
-        name: "Denny Curtis",
-        dob: "01-01-2000",
+        name: "محمدتقی ایمانی",
+        dob: "۱/۷/۱۳۳۲",
         img: "https://cdn.balkan.app/shared/2.jpg"
     },
     {
         id: 3,
         pid: 1,
         ppid: 2,
-        name: "Denny Curtis",
-        dob: "01-01-2000",
+        name: "ساره ایمانی",
+        dob: "۱۵/۱/۱۳۶۵",
         img: "https://cdn.balkan.app/shared/2.jpg"
 
     },
@@ -90,8 +90,8 @@ chart.load([{
         id: 4,
         pid: 1,
         ppid: 2,
-        name: "Denny Curtis",
-        dob: "01-01-2000",
+        name: "امیرحسین ایمانی",
+        dob: "۲۱/۶/۱۳۶۶",
         img: "https://cdn.balkan.app/shared/2.jpg"
     },
 ]);

@@ -9,3 +9,5 @@ https://balkan.app/OrgChartJS/Docs/ExpandCollapse
 [ ] add new nodes online
 [ ] edit nodes online
 [ ] collapsible
+[ ] load data from csv/json
+
