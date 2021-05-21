@@ -1,3 +1,10 @@
+# Documentation
+
+https://balkan.app/OrgChartJS/Docs/ExpandCollapse
+
+
 # TODO:
 
-[ ] searchable fields
+[x] searchable fields
+[ ] add new nodes
+[ ] edit nodes
