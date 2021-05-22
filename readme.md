@@ -10,7 +10,6 @@ https://balkan.app/OrgChartJS/Docs/ExpandCollapse
 - [ ] collapsible
 - [ ] load data from csv/json
 - [ ] Farsi nodes
-- [ ] 
 
 
 #‌ Personal details
