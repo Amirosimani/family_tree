@@ -12,3 +12,13 @@ https://balkan.app/OrgChartJS/Docs/ExpandCollapse
 - [ ] Farsi nodes
 - [ ] 
 
+
+#‌ Personal details
+
+* given name
+* nick name
+* birth/death 
+* place of birth
+* short hisotry
+* 
+
