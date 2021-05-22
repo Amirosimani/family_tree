@@ -8,7 +8,7 @@ https://balkan.app/OrgChartJS/Docs/ExpandCollapse
 - [x] searchable fields
 - [ ] add/edit new nodes online
 - [ ] collapsible
-- [ ] load data from csv/json
+- [x] load data from csv/json
 - [ ] Farsi nodes
 
 
