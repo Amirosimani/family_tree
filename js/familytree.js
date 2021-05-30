@@ -47,29 +47,53 @@ window.onload = function () {
         }
     });
 
-    $.getJSON("./data/data.json", function(data) {
-        console.log(data);
-        chart.load(data) // this will show the info it in firebug console
-    });
+    // $.getJSON("./data/data.json", function(data) {
+    //     console.log(data);
+    //     chart.load(data) // this will show the info it in firebug console
+    // });
 
-    // chart.load([          
-    //         { id: 1, tags: ["blue"], name: "King George VI", img: "https://cdn.balkan.app/shared/f1.png"},
-    //         { id: 2, pid: 1, tags: ["partner"], name: "Queen Elizabeth", title: "The Queen Mother", img: "https://cdn.balkan.app/shared/f2.png" },
-    //         { id: 3, pid: 1, tags: ["blue"],  ppid: 2, name: "زهرا حق‌نگهدار", img: "https://cdn.balkan.app/shared/f5.png"},
-    //         { id: 4, pid: 3, tags: ["left-partner"], name: "محمدتقی ایمانی", title: "Duke of Edinburgh", img: "https://cdn.balkan.app/shared/f3.png"},
-    //         { id: 5, pid: 1, ppid: 2, name: "Princess Margaret", img: "https://cdn.balkan.app/shared/f6.png"},
-    //         { id: 6, pid: 3,tags: ["blue"], ppid: 4, name: "امیرحسین ایمانی", title: "Prince of Wales", img: "https://cdn.balkan.app/shared/f8.png"},
-    //         { id: 7, pid: 6, tags: ["partner"] , name: "Diana", title: "Princess of Wales", img: "https://cdn.balkan.app/shared/f9.png"},
-    //         { id: 8, pid: 6, tags: ["partner"], name: "ساره ایمانی", title: "Duchess of Cornwall", img: "https://cdn.balkan.app/shared/f7.png" },
-    //         { id: 9, pid: 3, ppid: 4 , name: "ساره ایمانی", title: "Princess Royal", img: "https://cdn.balkan.app/shared/f10.png"},
-    //         { id: 10, pid: 3, ppid: 4 , name: "Prince Andrew", title: "Duke of York", img: "https://cdn.balkan.app/shared/f11.png"},
-    //         { id: 11, pid: 3, ppid: 4, name: "Prince Edward", title: "Earl of Wessex", img: "https://cdn.balkan.app/shared/f12.png"},
-    //         { id: 12, pid: 6, ppid: 7, tags: ["blue"], name: "Prince William", title: "Duch of Cambridge", img: "https://cdn.balkan.app/shared/f14.png"},
-    //         { id: 13, pid: 6, ppid: 7, name: "Prince Harry", img: "https://cdn.balkan.app/shared/f15.png"},
-    //         { id: 14, pid: 12, tags: ["left-partner"], name: "Catherine", title: "Duchess of Cambridge", img: "https://cdn.balkan.app/shared/f13.png"},
-    //         { id: 15, pid: 13, tags: ["right-partner"], name: "Meghan Markle", img: "https://cdn.balkan.app/shared/f16.png"},
-    //         { id: 16, pid: 12, ppid: 14, tags: ["blue"], name: "Prince George of Cambridge", img: "https://cdn.balkan.app/shared/f17.png"},
-    //         { id: 17, pid: 12, ppid: 14, tags: ["blue"], name: "Prince Charlotte of Cambridge", img: "https://cdn.balkan.app/shared/f18.png"},
-    //         { id: 18, pid: 12, ppid: 14, tags: ["blue"], name: "Prince Louis of Cambridge", img: "https://cdn.balkan.app/shared/f19.png"}
-    //     ]);
+    chart.load([
+            { id: 80, tags: [""], name: "MB imani", img: ""},
+            { id: 90, pid:80, tags: ["partner"], name: "Tooba Jahanmard", img: ""},
+            { id: 100, tags: ["blue"], name: "aghakhan ", title: "", img: "" },
+            { id: 200, pid: 100, tags: ["partner"], name: "robab ", title: "", img: "" },      
+            { id: 10, tags: ["blue"], name: "hossein haghnegahdar", img: "https://cdn.balkan.app/shared/f1.png"},
+            { id: 20, pid: 10, tags: ["partner"], name: "hajieh haghnegahdar", title: "", img: "https://cdn.balkan.app/shared/f2.png" },
+            { id: 30, pid: 10, tags: ["blue"],  ppid: 20, name: "mohammad haghnegahdar", img: "https://cdn.balkan.app/shared/f3.png"},
+            { id: 31, pid: 10, ppid: 20, name: "khalil haghnegahdar", img: ""},
+            { id: 32, pid: 10, ppid: 20, name: "karim haghnegahdar", img: ""},
+            { id: 33, pid: 10, ppid: 20, name: "Jalil haghnegahdar", img: ""},
+            { id: 34, pid: 10, ppid: 20, name: "kazem haghnegahdar", img: ""},
+            { id: 35, pid: 10, ppid: 20, name: "sadegh haghnegahdar", img: ""},
+            { id: 36, pid: 10, ppid: 20, name: "mina haghnegahdar", img: ""},
+            { id: 40, pid: 30, tags: ["left-partner"], ppid: 200, name: "paridokht karimi", title: "", img: "https://cdn.balkan.app/shared/f5.png"},
+            { id: 41, pid: 100, tags: [""], ppid: 200, name: "sherafat karimi", title: "", img: ""},
+            { id: 42, pid: 100, tags: [""], ppid: 200, name: "keramat karimi", title: "", img: ""},
+            { id: 43, pid: 100, tags: [""], ppid: 200, name: "nayyer karimi", title: "", img: ""},
+            { id: 50, pid: 30,tags: ["blue"], ppid: 40, name: "Zahra haghnegahdar", title: "Princess of Wales", img: "https://cdn.balkan.app/shared/f9.png"},
+            { id: 60, pid: 50, ppid: 90, tags: ["left-partner"] , name: "MT Imani", title: "Prince of Wales", img: "https://cdn.balkan.app/shared/f8.png"},
+            { id: 61, pid: 80, ppid: 90, tags: [""] , name: "zahra Imani", title: "", img: ""},
+            { id: 62, pid: 80, ppid: 90, tags: [""] , name: "mahdi Imani", title: "", img: ""},
+            { id: 63, pid: 80, ppid: 90, tags: [""] , name: "abbas Imani", title: "", img: ""},
+            { id: 64, pid: 80, ppid: 90, tags: [""] , name: "saeed Imani", title: "", img: ""},
+            { id: 65, pid: 80, ppid: 90, tags: [""] , name: "mohammad Imani", title: "", img: ""},
+            { id: 51, pid: 30, ppid: 40 , name: "ali haghnegahdar", title: "Duke of York", img: "https://cdn.balkan.app/shared/f11.png"},
+            { id: 52, pid: 30, ppid: 40 , name: "salimeh haghnegahdar", title: "Princess Royal", img: "https://cdn.balkan.app/shared/f10.png"},
+            { id: 53, pid: 30, ppid: 40, name: "sajjad haghnegahdar", title: "Earl of Wessex", img: "https://cdn.balkan.app/shared/f12.png"},
+            { id: 70, pid: 50,tags: ["blue"], ppid: 60, name: "sareh imani", title: "", img: ""},
+            { id: 71, pid: 50,tags: ["blue"], ppid: 60, name: "amirhossein imani", title: "", img: ""},
+
+
+
+
+
+
+            // { id: 120, pid: 60, ppid: 70, tags: ["blue"], name: "Prince William", title: "Duch of Cambridge", img: "https://cdn.balkan.app/shared/f14.png"},
+            // { id: 130, pid: 60, ppid: 70, name: "Prince Harry", img: "https://cdn.balkan.app/shared/f15.png"},
+            // { id: 140, pid: 120, tags: ["left-partner"], name: "Catherine", title: "Duchess of Cambridge", img: "https://cdn.balkan.app/shared/f13.png"},
+            // { id: 150, pid: 130, tags: ["right-partner"], name: "Meghan Markle", img: "https://cdn.balkan.app/shared/f16.png"},
+            // { id: 160, pid: 120, ppid: 140, tags: ["blue"], name: "Prince George of Cambridge", img: "https://cdn.balkan.app/shared/f17.png"},
+            // { id: 170, pid: 120, ppid: 140, tags: ["blue"], name: "Prince Charlotte of Cambridge", img: "https://cdn.balkan.app/shared/f18.png"},
+            // { id: 180, pid: 120, ppid: 140, tags: ["blue"], name: "Prince Louis of Cambridge", img: "https://cdn.balkan.app/shared/f19.png"}
+        ]);
 };
